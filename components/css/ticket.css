@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Set the background image for the page */
+body {
+  background-image: url("https://images.pexels.com/photos/33101/new-wing-emergency-at-the-moment.jpg");
+  background-size: cover;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Center the content horizontally */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Add spacing between the elements */
+table,
+form {
+  border-radius: 5px;
+  margin: 30px 0;
+}
+
+/* Style the table */
+table {
+  border-radius: 5px;
+  border-collapse: collapse;
+  width: 100%;
+  background: #ffffff;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Style the form */
+form {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[type="number"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Make the page responsive for mobile devices */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  table,
+  form {
+    margin: 20px 0;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  input[type="number"],
+  input[type="submit"] {
+    font-size: 14px;
+  }
+}

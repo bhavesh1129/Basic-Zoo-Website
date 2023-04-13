@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/23547/pexels-photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: #ffffff;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+form {
+  width: 100%;
+  margin: 20px auto;
+  max-width:100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+form h2 {
+  margin-top: 0;
+  font-size: 28px;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form select option {
+  font-size: 16px;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 18px;
+  margin-left: 35%;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+  text-align: center;
+}
+
+.ticket {
+  background-image: url('https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.ticket h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.ticket a {
+  text-decoration: none;
+  color: white;
+  padding: 4px;
+  border-radius: 3px;
+  background-color: #4caf50;
+}
+
+.ticket p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  .ticket {
+    padding: 20px;
+  }
+
+  .ticket h2 {
+    font-size: 24px;
+  }
+
+  .ticket p {
+    font-size: 16px;
+  }
+}

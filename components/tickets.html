@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./css/ticket.css" />
+
+    <!-- Unicons Link -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <a href="../index.html"
+          ><i class="uil uil-brightness"></i> Lambton Zoo</a
+        >
+      </div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="uil uil-bars"></i>
+      </label>
+      <ul>
+        <li>
+          <a href="../index.html" class="active">Home</a>
+        </li>
+        <li>
+          <a href="./visit.html">Visits</a>
+        </li>
+
+        <li></li>
+        <li>
+          <a href="./animals.html">Animals</a>
+        </li>
+        <li>
+          <a href="./plants.html">Plant</a>
+        </li>
+        <li>
+          <a href="./events.html">Events</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Ticket Page -->
+    <header><h1>Zoo Ticket Page</h1></header>
+
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Ticket Type</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Student</td>
+            <td>$10</td>
+          </tr>
+          <tr>
+            <td>Senior</td>
+            <td>$8</td>
+          </tr>
+          <tr>
+            <td>Adult</td>
+            <td>$12</td>
+          </tr>
+          <tr>
+            <td>Foreigner</td>
+            <td>$20</td>
+          </tr>
+        </tbody>
+      </table>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="ticket-type">Ticket Type:</label>
+        <select id="ticket-type" name="ticket-type" required>
+          <option value="">Select a ticket type</option>
+          <option value="student">Student ($10)</option>
+          <option value="senior">Senior ($8)</option>
+          <option value="adult">Adult ($12)</option>
+          <option value="foreigner">Foreigner ($20)</option>
+        </select>
+        <label for="quantity">Quantity:</label>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          min="1"
+          max="10"
+          required
+        />
+        <input type="submit" value="Book Ticket" />
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <a href="./index.html"
+        ><i class="uil uil-brightness"></i> <b>Lambton Zoo</b></a
+      >
+      <ul>
+        <li>
+          <a href="#"><i class="uil uil-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="uil uil-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="uil uil-twitter"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <span class="copyright"
+      >Made by Group4</span
+    >
+  </body>
+</html>
